@@ -9,8 +9,6 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
-      // Добавляем псевдоним для tailwindcss, чтобы перенаправить импорт
-      tailwindcss: path.resolve(__dirname, 'node_modules/tailwindcss/tailwind.css'),
     },
   },
   css: {

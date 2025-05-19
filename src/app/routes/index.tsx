@@ -1,10 +1,2 @@
-import { Routes, Route } from 'react-router-dom';
-import { MainPage } from '@/pages/main';
-
-export const AppRoutes = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<MainPage />} />
-    </Routes>
-  );
-}; 
+export { Router as AppRoutes } from './ui/Router';
+export { routes } from './config/routes.tsx'; 
