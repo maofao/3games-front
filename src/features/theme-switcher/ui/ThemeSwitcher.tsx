@@ -10,12 +10,14 @@ export const ThemeSwitcher: FC = () => {
   return (
     <Button
       variant="subtle"
-      color={dark ? 'yellow' : 'blue'}
       onClick={toggleTheme}
       className={styles.button(dark)}
-      leftSection={dark ? <IconSun size="1.2rem" /> : <IconMoonStars size="1.2rem" />}
+      px={8}
     >
-      {dark ? 'Светлая тема' : 'Темная тема'}
+      {dark 
+        ? <IconSun size="1.5rem" className={styles.icon(dark)} /> 
+        : <IconMoonStars size="1.5rem" className={styles.icon(dark)} />
+      }
     </Button>
   );
 }; 
